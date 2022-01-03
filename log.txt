@@ -1,0 +1,61 @@
+
+(c1)(cc) arrived
+(c2)(cc) arrived
+Connection 1 : c1 Occupied
+(c3)(cc) arrived and waiting
+Connection1 : c1 login
+Connection 2 : c2 Occupied
+Connection 1: c1 performs online activity
+Connection2 : c2 login
+Connection 2: c2 performs online activity
+Connection 1 : c1 logout
+Connection 2 : c2 logout
+(c4)(cc) arrived
+Connection 1 : c3 Occupied
+Connection1 : c3 login
+Connection 2 : c4 Occupied
+Connection 1: c3 performs online activity
+Connection2 : c4 login
+Connection 2: c4 performs online activity
+Connection 1 : c3 logout
+Connection 2 : c4 logout
+(c1)(cc) arrived
+(c2)(cc) arrived
+Connection 1 : c1 Occupied
+(c3)(cc) arrived and waiting
+Connection1 : c1 login
+Connection 2 : c2 Occupied
+Connection 1: c1 performs online activity
+Connection2 : c2 login
+Connection 2: c2 performs online activity
+Connection 1 : c1 logout
+Connection 2 : c2 logout
+(c4)(cc) arrived
+Connection 1 : c3 Occupied
+Connection1 : c3 login
+Connection 2 : c4 Occupied
+Connection 1: c3 performs online activity
+Connection2 : c4 login
+Connection 2: c4 performs online activity
+Connection 2 : c4 logout
+Connection 1 : c3 logout
+(c1)(cc) arrived
+(c2)(cc) arrived
+Connection 1 : c1 Occupied
+(c3)(cc) arrived and waiting
+Connection 2 : c2 Occupied
+Connection1 : c1 login
+Connection2 : c2 login
+Connection 1: c1 performs online activity
+Connection 2: c2 performs online activity
+Connection 2 : c2 logout
+Connection 1 : c1 logout
+(c4)(cc) arrived
+Connection 1 : c3 Occupied
+Connection1 : c3 login
+Connection 2 : c4 Occupied
+Connection 1: c3 performs online activity
+Connection2 : c4 login
+Connection 2: c4 performs online activity
+Connection 1 : c3 logout
+Connection 2 : c4 logout
