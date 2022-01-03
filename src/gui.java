@@ -4,6 +4,7 @@ import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.PrintStream;
+import java.util.ArrayList;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -14,13 +15,13 @@ import javax.swing.JTextField;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.SwingUtilities;
 
-public class Gui extends JFrame implements ActionListener {
+public class gui extends JFrame implements ActionListener {
     JLabel labelx = new JLabel("What is the number of wifi connection");
     JLabel labely = new JLabel("What is the number of devices?!");
     JLabel labelz = new JLabel("Enter the Name of the devices followed by the device type ");
 
 
-    JButton button = new JButton("run");
+    JButton button = new JButton("Start");
     JTextField text1 = new JTextField();
     JTextField text2 = new JTextField();
     JTextArea text3 = new JTextArea();
@@ -30,17 +31,17 @@ public class Gui extends JFrame implements ActionListener {
     int N;
     int TC;
 
-    Gui() {
+    gui() {
         this.setVisible(true);
-        this.setSize(400, 850);
-        this.getContentPane().setBackground(new Color(255, 86, 0));
+        this.setSize(850, 500);
+        this.getContentPane().setBackground(new Color(169, 169, 169));
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(null);
 
         this.add(labelx);
         labelx.setBounds(100, 0, 400, 20);
 
-        this.setTitle("Java Synchronization");
+        this.setTitle("Router Log");
         this.add(text1);
         text1.setBounds(100, 20, 200, 30);
         this.add(labely);
@@ -58,7 +59,7 @@ public class Gui extends JFrame implements ActionListener {
         button.setFocusPainted(false);
         button.addActionListener(this);
         this.add(text4);
-        text4.setBounds(70, 350, 250, 400);
+        text4.setBounds(400, 20, 250, 400);
         text4.setEditable(false);
         redirectSystemStreams();
 
@@ -82,17 +83,24 @@ public class Gui extends JFrame implements ActionListener {
 
 
         try {
-
-
             TC = Integer.valueOf(str2);
             String[] temp = text3.getText().split("\n");
+            int n = N;
+            int tc = TC;
+            ArrayList<Device> devices = new ArrayList<>();
 
-            Device[] TClines = new Device[TC];
-            for (int i = 0; i < TC; i++) {
-                String[] device = temp[i].split(" ");
-                TClines[i] = new Device(device[0], device[1]);
+            Router router = new Router(n);
+            for (int i = 0; i < tc; i++) {
+                String[] dev = temp[i].split(" ");
+                String name = dev[0];
+                String type = dev[1];
+                Device device = new Device(name, type, router);
+                devices.add(device);
             }
-            new Router(N, TC, TClines).connect();
+
+            for (int i = 0; i < tc; i++) {
+                router.addDevice(devices.get(i));
+            }
 
         } catch (Exception r) {
             System.out.println("Error");

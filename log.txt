@@ -1,61 +1,79 @@
-
-(c1)(cc) arrived
-(c2)(cc) arrived
-Connection 1 : c1 Occupied
-(c3)(cc) arrived and waiting
-Connection1 : c1 login
-Connection 2 : c2 Occupied
-Connection 1: c1 performs online activity
-Connection2 : c2 login
-Connection 2: c2 performs online activity
-Connection 1 : c1 logout
-Connection 2 : c2 logout
-(c4)(cc) arrived
-Connection 1 : c3 Occupied
-Connection1 : c3 login
-Connection 2 : c4 Occupied
-Connection 1: c3 performs online activity
-Connection2 : c4 login
-Connection 2: c4 performs online activity
-Connection 1 : c3 logout
-Connection 2 : c4 logout
-(c1)(cc) arrived
-(c2)(cc) arrived
-Connection 1 : c1 Occupied
-(c3)(cc) arrived and waiting
-Connection1 : c1 login
-Connection 2 : c2 Occupied
-Connection 1: c1 performs online activity
-Connection2 : c2 login
-Connection 2: c2 performs online activity
-Connection 1 : c1 logout
-Connection 2 : c2 logout
-(c4)(cc) arrived
-Connection 1 : c3 Occupied
-Connection1 : c3 login
-Connection 2 : c4 Occupied
-Connection 1: c3 performs online activity
-Connection2 : c4 login
-Connection 2: c4 performs online activity
-Connection 2 : c4 logout
-Connection 1 : c3 logout
-(c1)(cc) arrived
-(c2)(cc) arrived
-Connection 1 : c1 Occupied
-(c3)(cc) arrived and waiting
-Connection 2 : c2 Occupied
-Connection1 : c1 login
-Connection2 : c2 login
-Connection 1: c1 performs online activity
-Connection 2: c2 performs online activity
-Connection 2 : c2 logout
-Connection 1 : c1 logout
-(c4)(cc) arrived
-Connection 1 : c3 Occupied
-Connection1 : c3 login
-Connection 2 : c4 Occupied
-Connection 1: c3 performs online activity
-Connection2 : c4 login
-Connection 2: c4 performs online activity
-Connection 1 : c3 logout
-Connection 2 : c4 logout
+1 1 arrived 
+connection 1 : 1 1 occupied 
+2 2 arrived 
+connection 2 : 2 2 occupied 
+3 3 arrived and waiting 
+1 performs online activity 
+2 performs online activity 
+4 4 arrived and waiting 
+5 5 arrived and waiting 
+2 2 Logged out 
+connection 2 : 3 3 occupied 
+3 performs online activity 
+3 3 Logged out 
+connection 0 : 4 4 occupied 
+4 performs online activity 
+4 4 Logged out 
+connection 0 : 5 5 occupied 
+5 performs online activity 
+5 5 Logged out 
+1 1 arrived 
+connection 1 : 1 1 occupied 
+2 2 arrived 
+1 performs online activity 
+connection 2 : 2 2 occupied 
+3 3 arrived and waiting 
+2 performs online activity 
+4 4 arrived and waiting 
+5 5 arrived and waiting 
+2 2 Logged out 
+connection 2 : 3 3 occupied 
+3 performs online activity 
+1 1 Logged out 
+connection 1 : 4 4 occupied 
+4 performs online activity 
+4 4 Logged out 
+connection 0 : 5 5 occupied 
+5 performs online activity 
+3 3 Logged out 
+5 5 Logged out 
+1 1 arrived 
+connection 1 : 1 1 occupied 
+2 2 arrived 
+connection 2 : 2 2 occupied 
+1 performs online activity 
+3 3 arrived and waiting 
+2 performs online activity 
+4 4 arrived and waiting 
+5 5 arrived and waiting 
+2 2 Logged out 
+connection 2 : 3 3 occupied 
+3 performs online activity 
+1 1 Logged out 
+connection 1 : 4 4 occupied 
+4 performs online activity 
+3 3 Logged out 
+connection 0 : 5 5 occupied 
+5 performs online activity 
+4 4 Logged out 
+5 5 Logged out 
+1 1 arrived 
+connection 1 : 1 1 occupied 
+2 2 arrived 
+1 performs online activity 
+connection 2 : 2 2 occupied 
+3 3 arrived and waiting 
+4 4 arrived and waiting 
+2 performs online activity 
+5 5 arrived and waiting 
+2 2 Logged out 
+connection 2 : 3 3 occupied 
+3 performs online activity 
+1 1 Logged out 
+connection 1 : 4 4 occupied 
+4 performs online activity 
+3 3 Logged out 
+connection 0 : 5 5 occupied 
+5 performs online activity 
+5 5 Logged out 
+4 4 Logged out 
